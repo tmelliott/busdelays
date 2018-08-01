@@ -3,7 +3,7 @@ library(dbplyr)
 
 db <- "data/history.db"
 if (!file.exists(db))
-    stop("Please unzip the database first")
+    stop("Please download the database first")
 
 ## connection function
 connect <- function() dbConnect(SQLite(), db)
