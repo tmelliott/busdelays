@@ -1,0 +1,26 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+# Auckland Bus Delays
+
+A (hopefully) simple app to explore patterns in delays of Auckland buses.
+Currently the data runs from `r "2017-04-01"` until `r "2018-03-31"`.
+
+
+__NOTE__: currently the data is zipped up in the directory so it'll take ages to clone. At some point I'll figure out how to host the database in a cloud somewhere and serve from there.
+
+```bash
+git clone https://github.com/tmelliott/busdelays
+cd busdelays
+R -e "shiny::runApp()"
+```
