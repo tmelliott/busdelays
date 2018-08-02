@@ -1,5 +1,5 @@
 function(input, output) {
     output$mainplot <- renderPlot({
-        delayplot()
+        delayplot(input$stop.n, input$dow)
     })
 }
