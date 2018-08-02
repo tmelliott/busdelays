@@ -1,8 +1,12 @@
 fluidPage(
     sidebarLayout(
-        sidebarPanel(),
+        sidebarPanel(
+            h1("Auckland Bus Delays"),
+            hr()
+            # textOutput("connected")
+        ),
         mainPanel(
-            textOutput("connected")
+            plotOutput("mainplot")#, width = 800, height = 400)
         )
     )
 )
